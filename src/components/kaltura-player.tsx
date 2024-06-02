@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import kalturaConfig from "../../kalturaConfig";
 
 export default function KalturaPlayer() {
@@ -12,7 +12,7 @@ export default function KalturaPlayer() {
           entryId: kalturaConfig.entryId,
         },
         playback: {
-          // autoplay: true,
+          autoplay: true,
         },
       });
 

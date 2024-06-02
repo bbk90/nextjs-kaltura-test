@@ -8,6 +8,11 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+        <link
+          href="https://cdnapisec.kaltura.com"
+          rel="preconnect"
+          crossOrigin="anonymous"
+        />
         <Script src={scriptUrl} strategy={"beforeInteractive"} />
       </Head>
       <body>
