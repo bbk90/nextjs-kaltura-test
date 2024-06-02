@@ -12,7 +12,7 @@ export default function KalturaPlayer() {
           entryId: kalturaConfig.entryId,
         },
         playback: {
-          autoplay: true,
+          // autoplay: true,
         },
       });
 
