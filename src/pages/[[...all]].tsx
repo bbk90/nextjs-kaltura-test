@@ -16,7 +16,7 @@ interface IPage {
 }
 
 export default function Home({ page }: IPageProps) {
-  const { adsBlocked, title, content } = page;
+  const { adsBlocked, title, content } = page || {};
 
   return (
     <>
@@ -58,6 +58,6 @@ export const getStaticPaths: GetStaticPaths = async (context) => {
   let paths = [] as string[];
   return {
     paths,
-    fallback: "blocking",
+    fallback: false,
   };
 };

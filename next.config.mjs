@@ -2,7 +2,7 @@
 const nextConfig = {
   // reactStrictMode: true,
   output: "export",
-  basePath: "/nextjs-kaltura-test",
+  basePath: "",
   images: {
     unoptimized: true,
   },
